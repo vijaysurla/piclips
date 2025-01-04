@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { useSession, signIn, signOut } from 'next-auth/react'
 import UserAvatar from './UserAvatar'
-import { users } from '@/app/data/sampleData'
+import { users } from '../data/sampleData'
 
 export default function TopNav() {
   const router = useRouter()
@@ -158,6 +158,8 @@ export default function TopNav() {
     </div>
   )
 }
+
+
 
 
 

@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import MainLayout from '../layouts/MainLayout'
 import PostMain from '../components/PostMain'
-import { videos, users } from '@/app/data/sampleData'
+import { videos, users } from '../data/sampleData'
 
 export default function Following() {
   const [followingVideos, setFollowingVideos] = useState<typeof videos>([])
@@ -37,6 +37,8 @@ export default function Following() {
     </MainLayout>
   )
 }
+
+
 
 
 
