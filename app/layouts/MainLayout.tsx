@@ -7,7 +7,7 @@ import SideNav from '../components/SideNav'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { BiSearch } from 'react-icons/bi'
-import { users } from '../data/sampleData'
+import { users } from '@/app/data/sampleData'
 import UserAvatar from '../components/UserAvatar'
 
 interface MainLayoutProps {
@@ -106,6 +106,8 @@ export default function MainLayout({ children }: MainLayoutProps) {
     </div>
   )
 }
+
+
 
 
 

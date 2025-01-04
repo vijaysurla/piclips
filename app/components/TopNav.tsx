@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { useSession, signIn, signOut } from 'next-auth/react'
 import UserAvatar from './UserAvatar'
-import { users } from '../data/sampleData'
+import { users } from '@/app/data/sampleData'
 
 export default function TopNav() {
   const router = useRouter()
@@ -132,7 +132,7 @@ export default function TopNav() {
             <div className="flex items-center gap-2">
               <UserAvatar src={session.user?.image || undefined} name={session.user?.name || 'User'} size={32} />
               <Link
-                href={`/profile/${session.user?.id}`}
+                href={`/profile/${session.user?.name?.replace(/\s+/g, '').toLowerCase()}`}
                 className="text-sm hover:underline mr-4"
               >
                 Profile
@@ -158,6 +158,8 @@ export default function TopNav() {
     </div>
   )
 }
+
+
 
 
 

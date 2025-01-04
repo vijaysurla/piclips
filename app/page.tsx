@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import PostMain from './components/PostMain'
-import { videos, users } from './data/sampleData'
+import { videos, users } from '@/app/data/sampleData'
 import MainLayout from './layouts/MainLayout'
 
 export default function Home() {
@@ -91,6 +91,7 @@ export default function Home() {
     </MainLayout>
   )
 }
+
 
 
 

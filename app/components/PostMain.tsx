@@ -9,7 +9,7 @@ import { Heart, MessageCircle, Share2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import VideoPlayer from './VideoPlayer'
 import UserAvatar from './UserAvatar'
-import { users } from '../data/sampleData'
+import { users, videos } from '@/app/data/sampleData'
 
 interface PostMainProps {
   post: {
@@ -134,6 +134,8 @@ export default function PostMain({
     </div>
   )
 }
+
+
 
 
 
